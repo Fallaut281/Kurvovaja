@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мир Автогонок</title>
+  <link rel="icon" type="image/png" href="race.png">
+  <link rel="stylesheet" href="style.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></link>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <i class="fas fa-flag-checkered"></i>
+                    Racing World
+        </a>
+        <div class="nav-links">
+          <a href="about.html">О гонках</a>
+          <a href="series.html">Серии</a>
+          <a href="news.html">Новости</a>
+          <a href="calendar.html">Календарь</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="#" class="close-btn" id="closeMenu">&times;</a>
+      <a href="about.html">О гонках</a>
+      <a href="series.html">Серии</a>
+      <a href="news.html">Новости</a>
+      <a href="calendar.html">Календарь</a>
+    </div>
+  </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Мир Cкорости и Адреналина</h1>
+        <p>Погрузитесь в захватывающий мир автогонок, где каждый поворот - это вызов, а каждая победа - триумф мастерства и технологий</p>
+        <a href="about.html" class="btn">Исследовать Гонки</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">О Мире Автогонок</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Скорость, Технологии, Страсть</h3>
+          <p>Автогонки - это не просто спорт, это симбиоз человека и машины, где каждая деталь имеет значение. От легендарной формулы 1 до экстремальных ралли-рейдов, мир автоспорта предлагает невероятное разнообразие дисциплин.</p>
+          <p>Современные гоночные автомобили прелставляют собой вершину инженерной мысли, где технологии, разработанные на треке, находят применение в серийных автомобилях, делая их безопаснее и эффективнее.</p>
+          <p>Каждая гонка - это драматическое противостояние пилотов, команд и машин, где победа определяется тысячными долями секунды и стратегическими решениями.</p>
+        </div>
+        <div class="about-image">
+            <img src="drawing.jpg" alt="Чертёж болида">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="series" style="background: rgba(0, 0, 0, 0.3);">
+    <div class="container">
+      <h2 class="section-title">Популярные гоночные серии</h2>
+      <div class="series-gird">
+        <div class="series-card" id="numer1">
+          <div class="series-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Формула 1</h3>
+          <p>Королева автоспорта, где находятся лучшие пилоты мира и самые передовые технологии в гонках на специально подготовленных трассах.</p>
+        </div>
+        <div class="series-card">
+          <div class="series-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>NASCAR</h3>
+          <p>Амереканская серия гонок на овалах, известная своими захватывающими боксами и плотными группами автомобилей на трассе.</p>
+        </div>
+        <div class="series-card">
+          <div class="series-icon">
+            <i class="fas fa-road"></i>
+          </div>
+          <h3>WRC</h3>
+          <p>Чемпионат мира по ралли - экстримальные гонки на обычных дорогах разных стран, от снега до пустныни.</p>
+        </div>
+        <div class="series-card">
+          <div class="series-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Formela E</h3>
+          <p>Электрическая формула - будущее автоспорта, где инновации в области электромобилей встречаются с гоночным азартом</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="container">
+      <h2 class="section-title">Последние новости</h2>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-image">
+            <img src="redbull.jpg"></img>
+          </div>
+          <div class="news-content">
+            <span class="news-date">15 декабря 2024</span>
+            <h3>Новый рекорд скорости на трассе Сильверстоун</h3>
+            <p>Пилот команды Red Bull установил новый рекорд круга на исторической британской трассе</p>
+            <a href="#" class="btn" style="padding: 8px 16px; font-size: 14px;">Читать далее</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-image">
+            <img src="mercedes.webp"></img>
+          </div>
+          <div class="news-content">
+            <span class="news-date">12 декабря 2024</span>
+            <h3>Mercedes представляет новую гоночную машину</h3>
+            <p>Немецкая клманда раскрыла дизайн своего болида на сезон 2025 года с революционным аэродиномическими решениями.</p>
+            <div class="btn" style="padding: 8px 16px; font-size: 14px;">Читать далее</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-image">
+            <img src="trassa.jpg"></img>
+          </div>
+          <div class="news-content">
+            <span class="news-date">10 декабря 2024</span>
+            <h3>Новая трасса в Саудовской Аравии</h3>
+            <p>Королевство анонсировало строительство современной гоночной трассы для проведения международных соревнований</p>
+            <div class="btn" style="padding: 8px 16px; font-size: 14px">Читать далее</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-image">
+            <img src="crash.jpg"></img>
+          </div>
+          <div class="news-content">
+            <span class="news-date">8 декабря 2024</span>
+            <h3>Громкое поражение гоночной команды Ferarri</h3>
+            <p>Все болиды Ferarri разбились во время гонки на Гранд-при в Японии</p>
+            <div class="btn" style="padding: 8px 16px; font-size: 14px">Читать далее</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calendar" style="background: rgba(0, 0, 0, 0.3);">
+    <div class="container">
+      <h2 class="section-title">Календарь Гонок</h2>
+      <div class="calendar-list">
+        <div class="calendar-item">
+          <div class="event-info">
+            <h4>Гран-при Монако</h4>
+            <p>Формула 1 - Княжество Монако</p>
+          </div>
+          <div class="event-date">26 Мая 2025</div>
+        </div>
+        <div class="calendar-item">
+          <div class="event-info">
+            <h4>24 часа Ле-Мана</h4>
+            <p>Выносливость - Франция</p>
+          </div>
+          <div class="event-date">14 Июня 2025</div>
+        </div>
+        <div class="calendar-item">
+          <div class="event-info">
+            <h4>Ралли Монте-Карло</h4>
+            <p>WRC - Монако</p>
+          </div>
+          <div class="event-date">22 Сентября 2025</div>
+        </div>
+        <div class="calendar-item">
+          <div class="event-info">
+            <h4>Индианаполис 500</h4>
+            <p>IndyCar - США</p>
+          </div>
+          <div class="event-date">25 Ноября 2025</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Racing World</h3>
+          <p>Ваш надежный источник информации о мире автогонок. Следите за последними новостями, результатами и анализом гонок.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Навигация</h3>
+          <a href="about.html">О гонках</a>
+          <a href="series.html">Серии</a>
+          <a href="news.html">Новости</a>
+          <a href="calendar.html">Календарь</a>
+        </div>
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <p><i class="fas fa-envelope"></i> info@racingworld.com</p>
+          <p><i class="fas fa-phone"></i> +7 (992) 029-48-09</p>
+          <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Racing World. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

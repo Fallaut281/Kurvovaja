@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гоночные Серии - Racing World</title>
+    <link rel="icon" type="image/png" href="race.png">
+    <link rel="stylesheet" href="style_series.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script_series.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="main.html" class="logo">
+                    <i class="fas fa-flag-checkered"></i>
+                    Racing World
+                </a>
+                <div class="nav-links">
+                    <a href="main.html">Главная</a>
+                    <a href="about.html">О гонках</a>
+                    <a href="news.html">Новости</a>
+                    <a href="calendar.html">Календарь</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#" class="close-btn" id="closeMenu">&times;</a>
+            <a href="main.html">Главная</a>
+            <a href="about.html">О гонках</a>
+            <a href="news.html">Новости</a>
+            <a href="calendar.html">Календарь</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Гоночные Серии Мира</h1>
+                <p>От королевы автоспорта до экстремальных ралли — все главные чемпионаты в одном месте.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Series Section -->
+    <section id="formula1">
+        <div class="container">
+            <h2 class="section-title">Формула 1</h2>
+            <div class="series-container">
+                <div class="series-card">
+                    <div class="series-header" style="background: url('f1.png') center/cover no-repeat;">
+                        <div class="series-logo">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Формула 1</h3>
+                        <div class="series-year">Сезон 2025</div>
+                    </div>
+                    <div class="series-content">
+                        <p>Королева автоспорта, где сходятся лучшие пилоты мира и самые передовые технологии. Формула 1 — это апогей инженерной мысли и гоночного мастерства.</p>
+                        
+                        <div class="series-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">24</div>
+                                <div class="stat-label">Гран-при</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">10</div>
+                                <div class="stat-label">Команд</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">20</div>
+                                <div class="stat-label">Пилотов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">200+</div>
+                                <div class="stat-label">Млн зрителей</div>
+                            </div>
+                        </div>
+
+                        <div class="teams-list">
+                            <h4>Основные команды</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">Red Bull Racing</div>
+                                <div class="team-item">Ferrari</div>
+                                <div class="team-item">Mercedes</div>
+                                <div class="team-item">McLaren</div>
+                                <div class="team-item">Aston Martin</div>
+                                <div class="team-item">Alpine</div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn">Подробнее о Ф1</a>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-header" style="background: url('FE.png') center/cover no-repeat;">
+                        <div class="series-logo">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Formula E</h3>
+                        <div class="series-year">Сезон 2024-25</div>
+                    </div>
+                    <div class="series-content">
+                        <p>Электрическая формула — будущее автоспорта. Formula E сочетает в себе экологичность, инновации и захватывающие гонки на городских улицах.</p>
+                        
+                        <div class="series-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">16</div>
+                                <div class="stat-label">Этапов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">11</div>
+                                <div class="stat-label">Команд</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">22</div>
+                                <div class="stat-label">Пилотов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">Электро</div>
+                            </div>
+                        </div>
+
+                        <div class="teams-list">
+                            <h4>Топ команды</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">Jaguar TCS</div>
+                                <div class="team-item">Porsche</div>
+                                <div class="team-item">DS Penske</div>
+                                <div class="team-item">Nissan</div>
+                                <div class="team-item">Mahindra</div>
+                                <div class="team-item">Maserati</div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn">Подробнее о Formula E</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WRC Section -->
+    <section id="wrc" style="background: rgba(0, 0, 0, 0.3);">
+        <div class="container">
+            <h2 class="section-title">Ралли и Другие Серии</h2>
+            <div class="series-container">
+                <div class="series-card">
+                    <div class="series-header" style="background: url('WRC.png') center/cover no-repeat;">
+                        <div class="series-logo">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>WRC</h3>
+                        <div class="series-year">Сезон 2025</div>
+                    </div>
+                    <div class="series-content">
+                        <p>Чемпионат мира по ралли — экстремальные гонки на обычных дорогах разных стран. От снега Северной Европы до пыли Африки и асфальта Монте-Карло.</p>
+                        
+                        <div class="series-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">13</div>
+                                <div class="stat-label">Этапов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">8</div>
+                                <div class="stat-label">Команд</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">30+</div>
+                                <div class="stat-label">Экипажей</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">6</div>
+                                <div class="stat-label">Континентов</div>
+                            </div>
+                        </div>
+
+                        <div class="teams-list">
+                            <h4>Лидирующие команды</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">Toyota Gazoo</div>
+                                <div class="team-item">Hyundai</div>
+                                <div class="team-item">M-Sport Ford</div>
+                                <div class="team-item">Škoda</div>
+                                <div class="team-item">Citroën</div>
+                                <div class="team-item">Subaru</div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn">Подробнее о WRC</a>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-header" style="background: url('24hour.png') center/cover no-repeat;">
+                        <div class="series-logo">
+                            <i class="fas fa-circle-notch"></i>
+                        </div>
+                        <h3>24 часа Ле-Мана</h3>
+                        <div class="series-year">Июнь 2025</div>
+                    </div>
+                    <div class="series-content">
+                        <p>Самая престижная гонка на выносливость в мире. Команды соревнуются в течение 24 часов, стремясь пройти максимальное расстояние на легендарной трассе Сарт.</p>
+                        
+                        <div class="series-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">24</div>
+                                <div class="stat-label">Часов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">60+</div>
+                                <div class="stat-label">Автомобилей</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">300+</div>
+                                <div class="stat-label">Кругов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">1923</div>
+                                <div class="stat-label">Год основания</div>
+                            </div>
+                        </div>
+
+                        <div class="teams-list">
+                            <h4>Легендарные марки</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">Porsche</div>
+                                <div class="team-item">Ferrari</div>
+                                <div class="team-item">Audi</div>
+                                <div class="team-item">Toyota</div>
+                                <div class="team-item">Ford</div>
+                                <div class="team-item">BMW</div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn">Подробнее о Ле-Мане</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Championship Info -->
+    <section>
+        <div class="container">
+            <div class="championship-info">
+                <h3>Чемпионаты и Системы Начисления Очков</h3>
+                <p>Каждая гоночная серия имеет свою уникальную систему начисления очков и определения чемпионов. В Формуле 1 действует система, где первые 10 пилотов получают очки (25-18-15-12-10-8-6-4-2-1), а также дополнительное очко за быстрейший круг при условии финиша в топ-10.</p>
+                <p>В ралли WRC учитываются результаты основного экипажа команды, а в гонках на выносливость побеждает команда, прошедшая наибольшее расстояние за отведенное время. Каждая дисциплина требует уникального подхода, стратегии и мастерства.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Racing World</h3>
+                    <p>Ваш надежный источник информации о мире автогонок. Следите за последними новостями, результатами и анализом гонок.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <a href="main.html">Главная</a>
+                    <a href="about.html">О гонках</a>
+                    <a href="news.html">Новости</a>
+                    <a href="calendar.html">Календарь</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> info@racingworld.com</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Racing World. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

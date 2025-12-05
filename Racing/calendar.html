@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь Гонок - Racing World</title>
+    <link rel="icon" type="image/png" href="race.png">
+    <link rel="stylesheet" href="style_calendar.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="main.html" class="logo">
+                    <i class="fas fa-flag-checkered"></i>
+                    Racing World
+                </a>
+                <div class="nav-links">
+                    <a href="main.html">Главная</a>
+                    <a href="about.html">О гонках</a>
+                    <a href="series.html">Серии</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#" class="close-btn" id="closeMenu">&times;</a>
+            <a href="about.html">О гонках</a>
+            <a href="series.html">Серии</a>
+            <a href="news.html">Новости</a>
+            <a href="calendar.html">Календарь</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Календарь Гонок 2025</h1>
+                <p>Следите за всеми гонками сезона — от Формулы 1 до чемпионатов по ралли и выносливости.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Controls -->
+    <section>
+        <div class="container">
+            <div class="series-filter">
+                <button class="filter-btn active">Все серии</button>
+                <button class="filter-btn">Формула 1</button>
+                <button class="filter-btn">WRC</button>
+                <button class="filter-btn">Formula E</button>
+                <button class="filter-btn">24 часа Ле-Мана</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Race Highlight -->
+    <section>
+        <div class="container">
+            <div class="upcoming-highlight">
+                <h2>Следующая Гонка</h2>
+                <p>Не пропустите самое захватывающее событие сезона!</p>
+                <div class="highlight-race">
+                    <div class="highlight-date">
+                        <span class="highlight-day">15</span>
+                        <span class="highlight-month">Марта</span>
+                    </div>
+                    <div class="highlight-info">
+                        <h3>Гран-при Бахрейна</h3>
+                        <div class="highlight-location">Международная трасса Бахрейна, Сахир</div>
+                        <div class="race-status upcoming">Следующая гонка</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Grid -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Полный Календарь</h2>
+            <div class="calendar-grid">
+                <div class="race-card" data-series="Формула 1">
+                    <div class="race-series">Формула 1</div>
+                    <div class="race-date">
+                        <span class="race-day">15</span>
+                        <span class="race-month">Марта</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Бахрейна</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Международная трасса Бахрейна, Сахир
+                        </div>
+                        <div class="race-status upcoming">Следующая гонка</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="Формула 1">
+                    <div class="race-series">Формула 1</div>
+                    <div class="race-date">
+                        <span class="race-day">22</span>
+                        <span class="race-month">Марта</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Саудовской Аравии</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Джидда, Саудовская Аравия
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="WRC">
+                    <div class="race-series">WRC</div>
+                    <div class="race-date">
+                        <span class="race-day">28</span>
+                        <span class="race-month">Февраля</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Ралли Мексики</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Леон, Мексика
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="Formula E">
+                    <div class="race-series">Formula E</div>
+                    <div class="race-date">
+                        <span class="race-day">8</span>
+                        <span class="race-month">Марта</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Этап Formula E в Токио</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Токио, Япония
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="Формула 1">
+                    <div class="race-series">Формула 1</div>
+                    <div class="race-date">
+                        <span class="race-day">29</span>
+                        <span class="race-month">Марта</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Австралии</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Мельбурн, Австралия
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="WRC">
+                    <div class="race-series">WRC</div>
+                    <div class="race-date">
+                        <span class="race-day">21</span>
+                        <span class="race-month">Марта</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Ралли Канарских островов</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Тенерифе, Испания
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="24 часа Ле-Мана">
+                    <div class="race-series">24 часа Ле-Мана</div>
+                    <div class="race-date">
+                        <span class="race-day">14</span>
+                        <span class="race-month">Июня</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>24 часа Ле-Мана</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Ле-Ман, Франция
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="Формула 1">
+                    <div class="race-series">Формула 1</div>
+                    <div class="race-date">
+                        <span class="race-day">5</span>
+                        <span class="race-month">Апреля</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Японии</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Сузука, Япония
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="Formula E">
+                    <div class="race-series">Formula E</div>
+                    <div class="race-date">
+                        <span class="race-day">22</span>
+                        <span class="race-month">Марта</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Этап Formula E в Берлине</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Берлин, Германия
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="Формула 1">
+                    <div class="race-series">Формула 1</div>
+                    <div class="race-date">
+                        <span class="race-day">12</span>
+                        <span class="race-month">Апреля</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Китая</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Шанхай, Китай
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="WRC">
+                    <div class="race-series">WRC</div>
+                    <div class="race-date">
+                        <span class="race-day">25</span>
+                        <span class="race-month">Апреля</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Ралли Португалии</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Портиман, Португалия
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+
+                <div class="race-card" data-series="Формула 1">
+                    <div class="race-series">Формула 1</div>
+                    <div class="race-date">
+                        <span class="race-day">26</span>
+                        <span class="race-month">Мая</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Монако</h3>
+                        <div class="race-location">
+                            <i class="fas fa-map-marker-alt"></i> Монте-Карло, Монако
+                        </div>
+                        <div class="race-status">Запланировано</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Racing World</h3>
+                    <p>Ваш надежный источник информации о мире автогонок. Следите за последними новостями, результатами и анализом гонок.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <a href="main.html">Главная</a>
+                    <a href="about.html">О гонках</a>
+                    <a href="series.html">Гоночные серии</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> info@racingworld.com</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Racing World. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script_calendar.js"></script>
+</body>
+</html>

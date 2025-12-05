@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Racing World</title>
+    <link rel="icon" type="image/png" href="race.png">
+    <link rel="stylesheet" href="style_news.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="main.html" class="logo">
+                    <i class="fas fa-flag-checkered"></i>
+                    Racing World
+                </a>
+                <div class="nav-links">
+                    <a href="main.html">Главная</a>
+                    <a href="about.html">О гонках</a>
+                    <a href="series.html">Серии</a>
+                    <a href="calendar.html">Календарь</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#" class="close-btn" id="closeMenu">&times;</a>
+            <a href="main.html">Главная</a>
+            <a href="about.html">О гонках</a>
+            <a href="series.html">Серии</a>
+            <a href="calendar.html">Календарь</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Последние Новости Автоспорта</h1>
+                <p>Следите за самыми свежими новостями, анализами и эксклюзивными материалами из мира автогонок.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section>
+        <div class="container">
+            <div class="categories">
+                <button class="category-btn active">Все новости</button>
+                <button class="category-btn">Формула 1</button>
+                <button class="category-btn">WRC</button>
+                <button class="category-btn">Formula E</button>
+                <button class="category-btn">Технологии</button>
+                <button class="category-btn">Туризм</button>
+                <button class="category-btn">Аналитика</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section>
+        <div class="container">
+            <div class="featured-news">
+                <div class="featured-tag">ЭКСКЛЮЗИВ</div>
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="mercedes.webp"></img>
+                    </div>
+                    <div class="featured-text">
+                        <div class="featured-meta">
+                            <span class="featured-date">2 декабря 2025</span>
+                            <span class="featured-author">Автор: Алексей Петров</span>
+                        </div>
+                        <h2>Mercedes представляет революционный болид на сезон 2026 года</h2>
+                        <p>Команда Mercedes Racing раскрыла подробности своего нового гоночного автомобиля, который, по словам технического директора Эдриана Ньюи, представляет собой "квантовый скачок вперед" в аэродинамике и эффективности. Новинка оснащена улучшенной гибридной силовой установкой и системой активной аэродинамики, которая может изменять конфигурацию в реальном времени.</p>
+                        <a href="#" class="featured-btn">Читать полную статью</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section id="latest">
+        <div class="container">
+            <h2 class="section-title">Последние Новости</h2>
+            <div class="news-grid">
+                <div class="news-card" data-category="Формула 1">
+                    <div class="news-image" style="background: url('podpis.png') center/cover no-repeat;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">1 декабря 2025</span>
+                            <span class="news-category">Формула 1</span>
+                        </div>
+                        <h3>Ferrari подписывает контракт с талантливым пилотом из Формулы 2</h3>
+                        <p>Итальянская команда объявила о подписании долгосрочного контракта с 22-летним пилотом, который в этом сезоне показал выдающиеся результаты в Формуле 2 и считается одним из самых перспективных молодых талантов.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-category="WRC">
+                    <div class="news-image" style="background: url('toyota_WRC.png') center/cover no-repeat;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">30 ноября 2025</span>
+                            <span class="news-category">WRC</span>
+                        </div>
+                        <h3>Toyota завоевывает титул чемпиона мира в WRC за три этапа до конца сезона</h3>
+                        <p>Японская команда Toyota Gazoo Racing обеспечила себе титул конструкторов чемпионата мира по ралли после победы на Ралли Испании. Это третий титул подряд для команды, возглавляемой опытным инженером Томми Мякиненом.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-category="Formula E">
+                    <div class="news-image" style="background: url('E_trassa.png') center/cover no-repeat;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">28 ноября 2025</span>
+                            <span class="news-category">Formula E</span>
+                        </div>
+                        <h3>Новая трасса Formula E появится в Москве в сезоне 2026</h3>
+                        <p>Организаторы чемпионата мира по электрическим гонкам официально подтвердили проведение этапа в столице России. Гонка пройдет по живописному маршруту вдоль набережной Москвы-реки и станет частью городского фестиваля устойчивого развития.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-category="Технологии">
+                    <div class="news-image" style="background: url('rekuperazia.png') center/cover no-repeat;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">25 ноября 2025</span>
+                            <span class="news-category">Технологии</span>
+                        </div>
+                        <h3>Mercedes представляет новую систему рекуперации энергии для Формулы 1</h3>
+                        <p>Немецкий автопроизводитель разработал инновационную систему MGU-K, которая способна увеличить эффективность рекуперации энергии на 15% по сравнению с предыдущим поколением. Технология будет применена в болиде команды уже в следующем сезоне.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-category="Аналитика">
+                    <div class="news-image" style="background: url('McLaren.png') center/cover no-repeat;">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">22 ноября 2025</span>
+                            <span class="news-category">Аналитика</span>
+                        </div>
+                        <h3>Анализ стратегии пелотонов на Гран-при Бразилии: почему McLaren проиграл</h3>
+                        <p>Подробный разбор гоночной стратегии британской команды, которая, несмотря на высокую скорость автомобиля, не смогла реализовать свой потенциал из-за ошибок в тактике пит-стопов и выбора резины.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-category="Туризм">
+                    <div class="news-image" style="background: url('WTTC.png') center/cover no-repeat;">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">20 ноября 2025</span>
+                            <span class="news-category">Туризм</span>
+                        </div>
+                        <h3>WTCC анонсирует расширение календаря на 2026 год с новыми этапами в Азии</h3>
+                        <p>Чемпионат мира по турингу расширяет свое присутствие в Азиатско-Тихоокеанском регионе, добавляя этапы в Японии, Южной Корее и Индонезии. Это решение направлено на развитие автоспорта в быстрорастущих рынках региона.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Racing World</h3>
+                    <p>Ваш надежный источник информации о мире автогонок. Следите за последними новостями, результатами и анализом гонок.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О гонках</a>
+                    <a href="series.html">Гоночные серии</a>
+                    <a href="#">Календарь</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> info@racingworld.com</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Racing World. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script_news.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Гонках - Racing World</title>
+    <link rel="icon" type="image/png" href="race.png">
+    <link rel="stylesheet" href="style_about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script_about.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="main.html" class="logo">
+                    <i class="fas fa-flag-checkered"></i>
+                            Racing World
+                </a>
+                <div class="nav-links">
+                    <a href="main.html">Главная</a>
+                    <a href="series.html">Серии</a>
+                    <a href="news.html">Новости</a>
+                    <a href="calendar.html">Календарь</a>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#" class="close-btn" id="closeMenu">&times;</a>
+            <a href="main.html">Главная</a>
+            <a href="series.html">Серии</a>
+            <a href="news.html">Новости</a>
+            <a href="#calendar">Календарь</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Важное о Автогоноках </h1>
+                <p>От первых гоночных машин до современных технологических чудес — история скорости, страсти и инноваций.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history">
+        <div class="container">
+            <h2 class="section-title">История Автогонок</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <h3>От Первых Гонок до Современности</h3>
+                    <p>Первые организованные автомобильные гонки состоялись в конце XIX века, когда автомобили только начинали появляться на дорогах. В 1894 году прошла первая в мире автомобильная гонка из Парижа в Руан, в которой участвовало 102 автомобиля.</p>
+                    <p>С течением времени автогонки эволюционировали от простых заездов по дорогам общего пользования до сложных международных чемпионатов с миллионами зрителей по всему миру. Формула 1, основанная в 1950 году, стала королевой автоспорта и символом инженерного мастерства.</p>
+                    <p>Сегодня автогонки — это мультимиллиардная индустрия, объединяющая миллионы фанатов, сотни команд и тысячи инженеров, работающих над созданием самых быстрых и безопасных автомобилей в мире.</p>
+                </div>
+                <div class="history-image">
+                    <img src="vintage.png" alt="История автогонок">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="strategy" style="background: rgba(0, 0, 0, 0.3);">
+        <div class="container">
+            <h2 class="section-title">Стратегия шин: как выбор резины решает исход гонки</h2>
+            <div class="strategy-intro">
+                <p>В Формуле-1 победа зависит не только от скорости машины и мастерства пилота, но и от грамотной тактики. 
+                    Одна из самых важных её частей — стратегия использования шин. На каждом этапе уик-энда команда выбирает, 
+                    когда и какие шины надевать, чтобы найти баланс между скоростью, износом и количеством пит-стопов.</p>
+      
+                <p>Официальный поставщик шин Формулы-1 — компания Pirelli — привозит на каждый этап пять составов сухой резины, 
+                    от самых жёстких (C1) до самых мягких (C5). Но на конкретную гонку разрешено использовать только три из них: 
+                    обычно это Hard (жёсткие), Medium (средние) и Soft (мягкие).</p>
+            </div>
+
+            <!-- Soft -->
+            <div class="tire-block">
+                <div class="tire-content">
+                    <h4>Soft — скорость здесь и сейчас</h4>
+                    <p>Мягкие шины обеспечивают максимальную скорость и лучшее сцепление, особенно в начале stint'а. 
+                        Но они быстро изнашиваются, особенно на скоростных трассах. Их часто используют в квалификации и на коротких отрезках гонки.</p>
+                </div>
+                <div class="tire-image">
+                    <img src="soft.png" alt="Мягкие шины (Soft)">
+                </div>
+            </div>
+
+            <!-- Medium -->
+            <div class="tire-block">
+                <div class="tire-content">
+                    <h4>Medium — золотая середина</h4>
+                    <p>Средние шины — универсальный выбор. Они не такие быстрые, как Soft, но и не так быстро теряют эффективность. 
+                        Идеальны для первого или второго отрезка гонки, когда важно сохранить ресурс резины.</p>
+                </div>
+                <div class="tire-image">
+                    <img src="medium.png" alt="Средние шины (Medium)">
+                </div>
+            </div>
+
+            <!-- Hard -->
+            <div class="tire-block">
+                <div class="tire-content">
+                    <h4>Hard — надёжность и выносливость</h4>
+                    <p>Жёсткие шины изнашиваются медленнее всего. Они медленнее прогреваются и уступают в скорости, 
+                        но позволяют проехать длинный отрезок без деградации. Часто используются на последних кругах гонки или на агрессивных трассах.</p>
+                </div>
+                <div class="tire-image">
+                    <img src="hard.png" alt="Жёсткие шины (Hard)">
+                </div>
+            </div>
+
+            <!-- Стратегии -->
+            <div class="strategy-tactics">
+                <h4>Как строится стратегия?</h4>
+                <p>В сухую погоду пилот обязан использовать как минимум два разных состава сухих шин — это правило чемпионата. 
+                    Команды просчитывают десятки вариантов:</p>
+                <ul>
+                    <li><strong>Один пит-стоп</strong>: старт на Medium → переход на Hard для финишного отрезка.</li>
+                    <li><strong>Два пит-стопа</strong>: старт на Soft → Medium → Hard (или Soft повторно, если позволяет износ).</li>
+                    <li><strong>Undercut</strong>: ранний пит-стоп, чтобы выехать в чистый воздух и обогнать соперника за счёт быстрых кругов на свежей резине.</li>
+                    <li><strong>Overcut</strong>: задержка на трассе, чтобы защитить позицию и не уступить при обгоне в узких поворотах.</li>
+                </ul>
+                <p>Правильный выбор зависит от температуры асфальта, погоды, износа трассы и даже от тактики конкурентов. 
+                    Иногда неожиданный дождь или авария полностью меняют расчёт — и тогда на первый план выходит гибкость команды.</p>
+                <p class="note">
+                    <em>Интересный факт:</em> на некоторых трассах, например в Монако, износ шин минимален — пилоты могут стартовать на Soft и ехать на них до самого финиша. 
+                    А на скоростном Спа в Бельгии даже Hard-шины могут не выдержать более 20 кругов!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slipstreaming Strategy Section -->
+    <section id="slipstream">
+        <div class="container">
+            <h2 class="section-title">Slipstreaming в Автогонках</h2>
+            <div class="slipstream-block">
+                <div class="slipstream-content">
+                    <h3>Slipstreaming: стратегия аэродинамического следа</h3>
+                    <p>
+                    <strong>Slipstreaming</strong> (или «аэродинамический след») — это тактика, при которой пилот едет вплотную за автомобилем соперника, чтобы воспользоваться зоной пониженного давления воздуха позади него. Это значительно снижает аэродинамическое сопротивление и позволяет развивать более высокую скорость на прямых.
+                    </p>
+                    <p>
+                    Эффект особенно заметен на трассах с длинными прямыми, таких как Монца (Италия) или Сильверстоун (Великобритания). Используя slipstreaming, пилот может набрать достаточно скорости для обгона в конце прямой.
+                    </p>
+                    <p>
+                    Однако есть и обратная сторона: находясь в следе, машина теряет часть прижимной силы, что может ухудшить сцепление в поворотах. Поэтому гонщики часто используют эту тактику только на прямых, а перед поворотом стараются выйти из следа.
+                    </p>
+                    <p>
+                    В Формуле-1 slipstreaming особенно важен в квалификации на этапах с высокой скоростью и в гонках, где разница в темпе минимальна. В сериях вроде NASCAR или IndyCar, где машины ближе друг к другу, slipstreaming лежит в основе целых стратегий — например, «drafting» и «tandem drafting».
+                    </p>
+                    <p class="note">
+                    <em>Факт:</em> На Гран-при Италии в Монце разница в скорости между машиной в чистом воздухе и в slipstream’е может достигать 15–20 км/ч на прямой!
+                    </p>
+                </div>
+                <div class="sleepstream-img">
+                    <img src="sleep_stream.png" alt="sleep_stream">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Types Section -->
+    <section id="types" style="background: rgba(0, 0, 0, 0.3);">
+        <div class="container">
+            <h2 class="section-title">Типы Автогонок</h2>
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Формульные гонки</h3>
+                    <p>Гонки на специально спроектированных машинах с открытыми колесами на закрытых трассах. Включают Формулу 1, Формулу 2, Формулу E и другие серии.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Туризм</h3>
+                    <p>Гонки на серийных автомобилях, модифицированных для участия в соревнованиях. Популярные серии: WTCC, DTM, TCR и национальные чемпионаты.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Ралли</h3>
+                    <p>Гонки на обычных дорогах и бездорожье с разнообразными покрытиями. WRC — чемпионат мира по ралли, где пилоты соревнуются в экстремальных условиях.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h3>Выносливость</h3>
+                    <p>Длительные гонки на выносливость, такие как 24 часа Ле-Мана, где команды должны проехать максимальное расстояние за фиксированное время.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Драг-рейсинг</h3>
+                    <p>Гонки на ускорение на прямой дистанции 1/4 мили (402 метра). Скорость и мощность — ключевые факторы успеха в этой дисциплине.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Дрифт</h3>
+                    <p>Демонстрация мастерства управления автомобилем в заносе. Судьи оценивают стиль, угол дрифта, скорость и зрелищность прохождения поворотов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology">
+        <div class="container">
+            <h2 class="section-title">Технологии в Автогонках</h2>
+            <div class="tech-content">
+                <div class="tech-image">
+                    <img src="rentgen.png" alt="Гоночные технологии">
+                </div>
+                <div class="tech-text">
+                    <h3>Инновации, Меняющие Мир</h3>
+                    <p>Автогонки всегда были лабораторией для передовых технологий. Многие решения, впервые примененные на треке, позже находят применение в серийных автомобилях, делая их безопаснее, эффективнее и комфортнее.</p>
+                    <p>Современные гоночные автомобили — это сложнейшие инженерные системы, где каждый грамм веса и каждый миллиметр аэродинамики имеют решающее значение.</p>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check-circle"></i> Гибридные и электрические силовые установки</li>
+                        <li><i class="fas fa-check-circle"></i> Композитные материалы (карбон, кевлар)</li>
+                        <li><i class="fas fa-check-circle"></i> Активная аэродинамика</li>
+                        <li><i class="fas fa-check-circle"></i> Системы рекуперации энергии</li>
+                        <li><i class="fas fa-check-circle"></i> Телеметрия и искусственный интеллект</li>
+                        <li><i class="fas fa-check-circle"></i> 3D-печать деталей</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Racing World</h3>
+                    <p>Ваш надежный источник информации о мире автогонок. Следите за последними новостями, результатами и анализом гонок.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <a href="main.html">Главная</a>
+                    <a href="series.html">Серии</a>
+                    <a href="news.html">Новости</a>
+                    <a href="calendar.html">Календарь</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> info@racingworld.com</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Racing World. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

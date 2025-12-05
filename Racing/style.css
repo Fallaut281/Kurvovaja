@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background-color: #f4f4f4;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ff6b35;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+
+}
+
+.nav-links a:hover {
+    color: #ff6b35
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6b35;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    color:#ffd700;
+}
+
+/* Кнопка для боковой панели */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hamburger i {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.hamburger i:hover {
+    color: #ff6b35;
+}
+/*----------------------------------*/
+
+/* Боковое мобильное меню */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    transition: right 0.3s ease;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-content {
+    padding: 60px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mobile-menu-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-content a:hover {
+    color: #ff6b35
+}
+
+#closeMenu {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+
+/*Hero section*/ 
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('racing.png') center/cover no-repeat;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff6b35, #ffd700);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b35, #ff8c42);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.4);
+}
+
+/* Style Section*/
+/* section {
+    margin: 80px 0;
+} */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    color: #ffd700;
+    position: relative;
+    padding-top: 20px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff6b35, #ffd700);
+    border-radius: 2px;
+}
+
+/* About Section*/
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ff6b35
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Racing Series*/
+.series-gird {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.series-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.series-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ff6b35;
+}
+
+.series-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff6b35;
+}
+
+.series-card h3 {
+    font-size: 1.5 rem;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.series-card p {
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+
+/* News Section*/
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff6b35;
+}
+
+.news-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;       
+    height: 100%;      
+    object-fit: cover; 
+    display: block;
+}
+
+.news-content {
+    padding: 25px;
+}
+
+.news-date {
+    color: #ff6b35;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.news-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.news-content p {
+    color: #b0b0b0;
+    font-size: 14px;
+    margin-bottom: 15px
+}
+
+/*Calendar Section*/
+.calendar-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.calendar-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #ff6b35;
+    transition: transform 0.3s ease;
+}
+
+.calendar-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.event-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #ffd700;
+}
+
+.event-info p {
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+.event-date {
+    background: linear-gradient(45deg, #ff6b35, #ff8c42);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 60px 0 30px;
+    border-top: 1px solid #ff6b35;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-column a, .footer-column p {
+    color: #b0b0b0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ff6b35;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffd700;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #ff6b35;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.copyrirht{
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #b0b0b0;
+    font-size: 14px; 
+}
+
+@media (max-width: 1409px) {
+    .series-gird {
+        grid-template-columns: repeat(2 ,minmax(320px, 1fr));
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2 ,minmax(320px, 1fr))
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('short_racing.png') center/cover no-repeat;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 705px) {
+    .series-gird {
+        grid-template-columns: repeat(1 ,minmax(320px, 1fr));
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(1 ,minmax(320px, 1fr));
+    }
+}
+
+
+
+
