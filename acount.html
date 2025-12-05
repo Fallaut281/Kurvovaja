@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация - Racing World</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="acount.css"></link>
+</head>
+<body>
+  <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-flag-checkered"></i>
+                    Racing World
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Главная</a>  
+                    <a href="about.html">О гонках</a>
+                    <a href="series.html">Серии</a>
+                    <a href="news.html">Новости</a>
+                    <a href="calendar.html">Календарь</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#" class="close-btn" id="closeMenu">&times;</a>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О гонках</a>
+            <a href="series.html">Серии</a>
+            <a href="news.html">Новости</a>
+            <a href="calendar.html">Календарь</a>
+        </div>
+    </div>
+
+  <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-container">
+                <div class="registration-image">
+                    <div>
+                        <h2>Присоединяйтесь к Миру Скорости</h2>
+                        <p>Станьте частью сообщества автогонок и получайте эксклюзивный доступ к контенту, аналитике и событиям</p>
+                    </div>
+                </div>
+                <div class="registration-form">
+                    <h2>Создать Аккаунт</h2>
+                    <form id="registrationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                            <label for="firstName">Имя</label>
+                                <div class="form-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <input type="text" id="firstName" class="form-control" placeholder="Введите ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Фамилия</label>
+                                <div class="form-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <input type="text" id="lastName" class="form-control" placeholder="Введите вашу фамилию" required>
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="form-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="phone">Телефон (опционально)</label>
+                            <div class="form-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <input type="tel" id="phone" class="form-control" placeholder="+7 (999) 123-45-67">
+                        </div>
+            
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <div class="form-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <input type="password" id="password" class="form-control" placeholder="Минимум 8 символов" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Подтвердите пароль</label>
+                                <div class="form-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <input type="password" id="confirmPassword" class="form-control" placeholder="Повторите пароль" required>
+                            </div>
+                        </div>
+                
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">Я согласен с <a href="#" style="color: #ff6b35;">Условиями использования</a> и <a href="#" style="color: #ff6b35;">Политикой конфиденциальности</a></label>
+                        </div>
+                
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter">
+                            <label for="newsletter">Подписаться на рассылку о новых гонках и событиях</label>
+                        </div>
+                
+                        <button type="submit" class="btn">Зарегистрироваться</button>
+                    </form>
+          
+                    <div class="login-link">
+                        Уже есть аккаунт? <a href="#">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script_acount.js"></script>
+</body>
+</html>
