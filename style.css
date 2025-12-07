@@ -94,7 +94,7 @@ header {
     right: -300px;
     width: 280px;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     z-index: 2000;
     transition: right 0.3s ease;
